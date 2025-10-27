@@ -2,6 +2,7 @@ package com.example.mediscan.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
+import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
@@ -19,8 +20,8 @@ fun MediScanTheme(
 ) {
     MaterialTheme(
         colorScheme = if (darkTheme) DarkColors else LightColors,
-        typography = Typography,
-        shapes = AppShapes, // Use the variable, not the class!
+        typography = Typography(), // use default Material3 Typography instance
+        shapes = AppShapes,
         content = content
     )
 }
