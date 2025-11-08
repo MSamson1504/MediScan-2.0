@@ -8,7 +8,6 @@ data class UserProfile(
     val gender: String,
     val healthHistory: String
 )
-
 enum class Screen {
     Login, Dashboard,
     MedicationReminders, SymptomInput,
@@ -29,7 +28,12 @@ data class SymptomLog(
     val notes: String
 )
 
-data class SymptomSuggestion(val symptom: String, val severity: String, val notes: String, val suggestionText: String)
+data class SymptomSuggestion(
+    val symptom: String,
+    val severity: String,
+    val notes: String,
+    val suggestion: String
+)
 
 data class Doctor(
     val name: String,
